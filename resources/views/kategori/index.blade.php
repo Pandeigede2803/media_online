@@ -48,7 +48,7 @@
                 <!-- Category Image -->
                 <div class="relative h-48 overflow-hidden">
                     <img src="{{ asset('storage/' . $kategori->image) }}" alt="{{ $kategori->nama_kategori }}"
-    class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-300">
+                        class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-300">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     </div>
@@ -109,16 +109,15 @@
                     </a>
                 </div>
             </div>
-
         @endforeach
 
-        @endsection
+    @endsection
 
-        @push('styles')
-            <style>
-                /* Custom hover effect for category cards */
-                .group:hover {
-                    transform: translateY(-2px);
-                }
-            </style>
-        @endpush
+    @push('styles')
+        <style>
+            /* Custom hover effect for category cards */
+            .group:hover {
+                transform: translateY(-2px);
+            }
+        </style>
+    @endpush

@@ -17,7 +17,23 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+
+            colors: {
+                primary: {
+                    DEFAULT: '#1D4ED8', // Default Filament primary color (blue)
+                    dark: '#1E3A8A',
+                },
+                secondary: {
+                    DEFAULT: '#4ADE80', // Change this to your desired secondary color
+                    light: '#A7F3D0',
+                    dark: '#15803D',
+                },
+            },
         },
     },
-    plugins: [],
+    // plugins: [],
+    plugins: [
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/typography'),
+    ],
 };
